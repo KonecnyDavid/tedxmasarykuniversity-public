@@ -1,0 +1,125 @@
+---
+template: about-page
+slug: /partneri
+title: Partneři akce
+---
+
+Akce TEDxMasarykUniversity by nemohla existovat bez naších partnerů a sponzorů. Akce je zaštítena rektorem MU.
+
+<div className="mx-auto">
+  <a
+    href="https://www.muni.cz"
+    target="_blank"
+    className="nohover"
+    rel="noreferrer"
+  >
+    <h1
+      className={(useColorMode()[0] !== "default" ? "white" : "") + " munifont titular colored"}
+    >
+      MUNI
+    </h1>
+  </a>
+</div>
+
+import TedXLogo from "../../../static/assets/svg/tedxlogo.svg";
+import MunieSVG from "../../../static/assets/svg/munie.svg";
+import EsaSVG from "../../../static/assets/svg/esa.svg";
+
+import { useColorMode } from "theme-ui";
+
+# Hlavní partneři
+
+<div className="grids col-1 md-2" type="1">
+  <div>
+    <a
+      href="https://www.munie.cz"
+      target="_blank"
+      className="nohover"
+      rel="noreferrer"
+    >
+      <MunieSVG className={useColorMode()[0] === "dark" ? "discolored" : ""} />
+    </a>
+  </div>
+  <div>
+    <a
+      href="https://www.esportsa.cz"
+      target="_blank"
+      className="nohover"
+      rel="noreferrer"
+    >
+      <EsaSVG className={useColorMode()[0] === "dark" ? "discolored" : ""} />
+    </a>
+  </div>
+</div>
+
+# Produkční partneři
+
+import DeloitteSVG from "../../../static/assets/svg/deloitte.svg";
+
+<div className="grids col-1 md-2 mb-3" type="1">
+  <div>
+    <a
+      href="https://www2.deloitte.com/cz/cs.html"
+      target="_blank"
+      className="nohover"
+      rel="noreferrer"
+    >
+      <DeloitteSVG className={useColorMode()[0] === "dark" ? "" : "deloitteWhite"} />
+    </a>
+  </div>
+  <div>
+    <a
+      href="http://verticalproduction.cz/"
+      target="_blank"
+      className="nohover"
+      rel="noreferrer"
+    >
+      <img src="/assets/vert.png" className={(useColorMode()[0] === "dark" ? "backgroundy" : "") + " p-3"} />
+    </a>
+  </div>
+</div>
+
+# Partneři
+
+<div className="grids col-1 md-4 mb-3" type="1">
+  <div>
+    <a
+      href="https://www.dominospizza.cz/"
+      target="_blank"
+      className="nohover"
+      rel="noreferrer"
+    >
+      <img src="/assets/dominos.png"  />
+    </a>
+  </div>
+  <div>
+    <a
+      href="https://vida.cz/"
+      target="_blank"
+      className="nohover"
+      rel="noreferrer"
+    >
+      <img src="/assets/vida.png" className={(useColorMode()[0] === "dark" ? "backgroundy" : "") + " p-3"} />
+    </a>
+  </div>
+  <div>
+    <a
+      href="https://www.zoobrno.cz/"
+      target="_blank"
+      className="nohover"
+      rel="noreferrer"
+    >
+      <img src="/assets/zoo.png" />
+    </a>
+  </div>
+  <div>
+    <a
+      href="http://www.bistrofranz.cz/"
+      target="_blank"
+      className="nohover"
+      rel="noreferrer"
+    >
+      <img src="/assets/franz.jpg" className={(useColorMode()[0] === "dark" ? "backgroundy" : "")} />
+    </a>
+  </div>
+</div>
