@@ -1,15 +1,13 @@
-import React from "react"
-import { graphql } from "gatsby"
-import { MDXRenderer } from "gatsby-plugin-mdx"
-
 import Layout from "../components/layout"
+import { MDXRenderer } from "gatsby-plugin-mdx"
+import React from "react"
 import Seo from "../components/seo"
+import { graphql } from "gatsby"
 
 export const pageQuery = graphql`
   query AboutQuery($id: String!){
 		mdx(id: { eq: $id }) {
       id
-			excerpt
 			body
       frontmatter {
         title
@@ -25,7 +23,7 @@ const AboutPage = ({ data }) => {
 		<Layout className="page">
 			<Seo
 				title={frontmatter.title}
-				description={excerpt}
+				description={""}
 			/>
 			<div className="wrapper">
 				<h1>{frontmatter.title}</h1>
