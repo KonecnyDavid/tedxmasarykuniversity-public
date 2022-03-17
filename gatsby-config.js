@@ -11,7 +11,6 @@ const process = require('process')
 module.exports = {
   siteMetadata: settings.meta,
   plugins: [
-    `gatsby-plugin-netlify-cache`,
     {
       resolve: `gatsby-plugin-mdx`,
       options: {
